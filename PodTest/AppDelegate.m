@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <MBProgressHUD.h>
 
 @interface AppDelegate ()
 

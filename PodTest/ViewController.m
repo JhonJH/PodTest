@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <MBProgressHUD.h>
+#import "NSString+NowString.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    NSString *str = @"abcdefg";
+    NSString *str2 = [NSString reverseString:str];
+    NSLog(@"%@",str);
+    NSLog(@"%@",str2);
+    
 }
 
 - (void)didReceiveMemoryWarning {
